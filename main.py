@@ -74,7 +74,7 @@ def predict_new_sentence_with_label(sentence, vectorizer, model):
 
 
 
-with open('best_rf_model_new.pkl', 'rb') as f:
+with open('best_rf_model.pkl', 'rb') as f:
     model = pickle.load(f)
 
 vectorizer=joblib.load('tfidf_vectorizer.pkl')
